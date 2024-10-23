@@ -10,19 +10,19 @@ function SelectCategory() {
                     <h1 className="title">Select a Category to Start!</h1>
                     <div className="categories">
                         <div className="card">
-                            <img src="public/beach.png" alt="Beach" className="card-image" />
+                            <img src="/beach.png" alt="Beach" className="card-image" />
                             <div className="card-overlay">
                             <Link className="card-link" to={"./beaches"}>Beaches</Link>
                             </div>
                         </div>
                         <div className="card">
-                            <img src="public/parks.png" alt="Park" className="card-image" />
+                            <img src="/parks.png" alt="Park" className="card-image" />
                             <div className="card-overlay">
                             <Link className="card-link" to={"./parks"}>Parks</Link>
                             </div>
                         </div>
                         <div className="card">
-                            <img src="public/eats.png" alt="Food" className="card-image" />
+                            <img src="/eats.png" alt="Food" className="card-image" />
                             <div className="card-overlay">
                             <Link className="card-link" to={"./good-eats"}>Good Eats</Link>
                             </div>
