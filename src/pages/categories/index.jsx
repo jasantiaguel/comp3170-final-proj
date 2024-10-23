@@ -6,6 +6,7 @@ export function CategoriesHome() {
             <Link to={"./good-eats"}>Good Eats</Link>
             <Link to={"./parks"}>Parks</Link>
             <Link to={"./beaches"}>Beaches</Link>
+            <Link to={"../Saved"}>Saved</Link>
         </div>
     )
 }
