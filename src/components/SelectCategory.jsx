@@ -28,9 +28,9 @@ function SelectCategory() {
                             </div>
                         </div>
                     </div>
-                    <div className="saved">
+                    <Link className="saved" to={"../Saved"}>
                         <button>Saved Locations</button>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>
