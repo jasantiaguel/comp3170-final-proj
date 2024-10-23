@@ -1,12 +1,13 @@
-import './App.css'
+import React from 'react';
+import WelcomeCard from './components/WelcomeCard';
+import './App.css';
 
-function App() {
-
+export default function App() {
   return (
     <>
-      <h1>Final Proj</h1>
+      <div className="app-bg">
+        <WelcomeCard />
+      </div>
     </>
-  )
+  );
 }
-
-export default App
