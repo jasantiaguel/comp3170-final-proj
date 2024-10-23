@@ -10,6 +10,8 @@ import {
 import { GoodEats } from './pages/categories/good-eats.jsx'
 import { Parks } from './pages/categories/parks.jsx'
 import { Beaches } from './pages/categories/beaches.jsx'
+import { Saved } from './pages/Saved.jsx'
+
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/categories/beaches",
     element: <Beaches />
+  },
+  {
+    path: "/saved",
+    element: <Saved />
   }
 ]);
 
