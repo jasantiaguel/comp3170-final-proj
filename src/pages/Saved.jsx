@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import bgImage from "../../public/Background.jpg";
 
 export function Saved() {
     const locations = [
@@ -29,7 +30,7 @@ export function Saved() {
       ];
   return (
     <>
-        <img className="backgroundImage" src="../public/Background.jpg" alt="vancouver skyline background" />
+        <img className="backgroundImage" src={bgImage} alt="vancouver skyline background" />
         <div className="mainContainer-saved">
             <h1 className="header-saved">Saved Locations</h1>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
