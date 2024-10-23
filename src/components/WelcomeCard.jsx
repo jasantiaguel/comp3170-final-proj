@@ -19,7 +19,7 @@ export default function WelcomeCard() {
           <li>Get points for how close your guess is to the real location</li>
           <li>Save your favorite locations</li>
         </ol>
-        <Link to={"/test"}>
+        <Link to={"/categories"}>
           <button className="play-button">Play Now!</button>
         </Link>
       </div>
