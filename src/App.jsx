@@ -1,5 +1,6 @@
 import React from 'react';
 import WelcomeCard from './components/WelcomeCard';
+import { Link } from "react-router-dom";
 import './App.css';
 
 export default function App() {
@@ -7,6 +8,7 @@ export default function App() {
     <>
       <div className="app-bg">
         <WelcomeCard />
+        <Link to={"/test"}>Test page</Link>
       </div>
     </>
   );
