@@ -8,7 +8,6 @@ export default function App() {
     <>
       <div className="app-bg">
         <WelcomeCard />
-        <Link to={"/test"}>Test page</Link>
       </div>
     </>
   );

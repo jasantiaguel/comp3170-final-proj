@@ -3,14 +3,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2rem 4rem;
+
+  background-color: rgba( 0, 0, 0, 0.8 );
   backdrop-filter: blur(10px);
   border-radius: 32px;
-  border: 4px solid white;
+  border: 2px solid white;
+  
   color: white;
 }
 
 .welcome-card ol {
   text-align: left;
+  margin-bottom: 4rem;
+}
+
+.play-button {
+  padding: 1rem 4rem;
+  background: linear-gradient( 45deg, #e7c449 0%, #e4d198 69%, #f9cd2d 100%);
+  border-radius: 32px;
+  border: none;
+
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+
+  cursor: pointer;
 }
