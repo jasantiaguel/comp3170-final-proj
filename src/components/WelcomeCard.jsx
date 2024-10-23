@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import './WelcomeCard.css';
+import '../css/WelcomeCard.css';
 
 export default function WelcomeCard() {
   return (

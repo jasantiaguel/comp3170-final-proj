@@ -1,3 +1,5 @@
+import '../../css/GamePage.css';
+
 export function Beaches() {
     return(
         <div>
