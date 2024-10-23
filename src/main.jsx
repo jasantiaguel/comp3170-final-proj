@@ -14,7 +14,7 @@ import { Beaches } from './pages/categories/beaches.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <App />, 
   },
   {
     path: "/categories",
