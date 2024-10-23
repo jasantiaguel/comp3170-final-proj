@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom"
+import React from 'react';
+import WelcomeCard from '../components/WelcomeCard.jsx';
+import '../css/App.css';
 
-function App() {
-
+export default function App() {
   return (
     <>
-      <h1>Final Proj</h1>
-      <Link to={"/categories"}>Categories</Link>
+      <div className="welcome-bg">
+        <WelcomeCard />
+      </div>
     </>
-  )
+  );
 }
-
-export default App

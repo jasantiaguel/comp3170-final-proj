@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './pages/App.jsx'
 import { CategoriesHome } from './pages/categories/index.jsx'
-import './index.css'
+import './css/index.css'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,6 +12,7 @@ import { Parks } from './pages/categories/parks.jsx'
 import { Beaches } from './pages/categories/beaches.jsx'
 import { Saved } from './pages/Saved.jsx'
 
+import Results from './pages/results.jsx'
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: "/saved",
     element: <Saved />
+  },
+  {
+    path: "/results",
+    element: <Results />
   }
 ]);
 
