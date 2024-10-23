@@ -1,13 +1,15 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { Router } from 'react-router-dom';
-import App from './App.jsx'
-import TestPage from "./testpage.jsx"
+import App from './pages/App.jsx'
+import { CategoriesHome } from './pages/categories/index.jsx'
 import './index.css'
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { GoodEats } from './pages/categories/good-eats.jsx'
+import { Parks } from './pages/categories/parks.jsx'
+import { Beaches } from './pages/categories/beaches.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,8 +17,20 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/test",
-    element: <TestPage/>
+    path: "/categories",
+    element: <CategoriesHome />
+  },
+  {
+    path: "/categories/good-eats",
+    element: <GoodEats />
+  },
+  {
+    path: "/categories/parks",
+    element: <Parks />
+  },
+  {
+    path: "/categories/beaches",
+    element: <Beaches />
   }
 ]);
 

@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <h1>Final Proj</h1>
-      <Link to={"/test"}>Test page</Link>
+      <Link to={"/categories"}>Categories</Link>
     </>
   )
 }
