@@ -1,0 +1,30 @@
+.map {
+    width: 15rem;
+    height: 15rem;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    border-radius: 4rem;
+}
+
+.map:hover {
+    width: 25rem;
+    height: 25rem;
+}
+
+.mainImage {
+    max-width: 100vw;
+    height: auto;
+}
+
+.nextButton {
+    padding: 1.5rem 3rem;
+    border: 2px solid white;
+    border-radius: 6rem;
+    font-size: 16pt;
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+}

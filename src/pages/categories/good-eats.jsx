@@ -1,7 +1,9 @@
+import Quiz from "../../components/quiz";
+
 export function GoodEats() {
     return(
         <div>
-            <h1>Good Eats</h1>
+            <Quiz category="good-eats"/>
         </div>
     )
 }

@@ -1,5 +1,4 @@
-.app-bg {
-  background-image: url('public/van-go-page-bg.png');
+.welcome-bg {
   background-size: cover;
   background-position: center;
   height: 100vh;
