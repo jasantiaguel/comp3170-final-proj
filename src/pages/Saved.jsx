@@ -58,7 +58,9 @@ export function Saved() {
           ))}
         </tbody>
       </table>
+      <button>
             <Link to={"/"}>Go Back</Link>
+        </button>
         </div>
     </>
   );
