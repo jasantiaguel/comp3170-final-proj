@@ -40,7 +40,6 @@ html, body {
 
 
 
-
 .mainContainer-saved {
   position: relative;
   z-index: 1;
@@ -52,7 +51,11 @@ html, body {
   border-radius: 42px;
   height: 736px;
   width: 1562px;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 5rem;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .header-saved {
@@ -62,3 +65,4 @@ html, body {
   width: auto;
   padding: 40px; 
 }
+ 
