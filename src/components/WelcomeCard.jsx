@@ -24,7 +24,7 @@ export default function WelcomeCard() {
       <h1>Welcome to</h1>
       <div className="logo-container">
         <motion.img 
-          src="../public/Van.svg" 
+          src="/Van.svg" 
           alt="Van Logo" 
           className="logo1" 
           initial={{ opacity: 0 }}
@@ -32,7 +32,7 @@ export default function WelcomeCard() {
           transition={{ duration: 1.5, ease: "easeInOut", delay: 1 }}
         />
         <motion.img 
-          src="../public/Go.svg" 
+          src="/Go.svg" 
           alt="Go Logo" 
           className="logo2"
           initial={{ x: -350, opacity: 0 }}
