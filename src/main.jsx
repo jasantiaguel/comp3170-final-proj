@@ -7,7 +7,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { GoodEats } from './pages/categories/good-eats.jsx'
+import { GoodEats } from './pages/categories/goodEats.jsx'
 import { Parks } from './pages/categories/parks.jsx'
 import { Beaches } from './pages/categories/beaches.jsx'
 import { Saved } from './pages/Saved.jsx'

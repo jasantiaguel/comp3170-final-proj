@@ -1,0 +1,63 @@
+.background {
+    background-image: url('public/Vancouver-skyline.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 8rem;
+    background-color: rgba( 0, 0, 0, 0.69 );
+    backdrop-filter: blur(10px);
+    border-radius: 32px;
+    border: 2px solid white;
+    color: white;
+}
+
+.heading {
+    font-size: 2.6rem;
+    color: #afafaf;
+    margin-bottom: 0.6em;
+    font-weight: 500;
+}
+
+.score {
+    font-size: 2.8rem;
+    color: #ffffff;
+    margin-bottom: 2em;
+    font-weight: 600;
+}
+
+.link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
