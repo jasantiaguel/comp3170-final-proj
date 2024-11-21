@@ -31,6 +31,7 @@ export function Saved() {
   return (
     <>
         <img className="backgroundImage" src={bgImage} alt="vancouver skyline background" />
+        <div className="containerSavedCentering">
         <div className="mainContainer-saved">
             <h1 className="header-saved">Saved Locations</h1>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
@@ -63,6 +64,8 @@ export function Saved() {
             <Link to={"/"}>Go Back</Link>
         </button>
         </div>
+        </div>
+        
     </>
   );
 }

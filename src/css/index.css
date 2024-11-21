@@ -11,19 +11,34 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  width: 1920px;
+  height: 1080px;
 }
 
+
 .backgroundImage {
-  position: absolute;
+  position: fixed; 
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100%; 
+  height: 100%; 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
+  overflow: hidden; 
 }
+
+html, body {
+  overflow: hidden; /* Prevents both horizontal and vertical scrolling */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 
 .mainContainer-saved {
   position: relative;
@@ -36,7 +51,11 @@
   border-radius: 42px;
   height: 736px;
   width: 1562px;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 5rem;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .header-saved {
@@ -46,3 +65,4 @@
   width: auto;
   padding: 40px; 
 }
+ 
