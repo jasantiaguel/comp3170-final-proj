@@ -2,8 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import '../css/WelcomeCard.css';
-import '../../public/Van.svg';
-import '../../public/Go.svg';
+import '/Van.svg';
+import '/Go.svg';
 
 export default function WelcomeCard() {
   const [isClicked, setIsClicked] = useState(false);
