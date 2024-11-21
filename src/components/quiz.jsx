@@ -33,11 +33,25 @@ export default function Quiz({category}) {
   function getScore() {
     const _lat = Math.abs(diff.lat);
     const _lng = Math.abs(diff.lng);
-    if (_lat < 1 && _lng < 1) {
+    if (_lat < .01 && _lng < .01) {
       return 10;
-    } else if (_lat < 10 && _lng < 10) {
+    } else if (_lat < .02 && _lng < .02) {
+      return 9;
+    } else if (_lat < .03 && _lng < .03) {
+      return 8;
+    } else if (_lat < .04 && _lng < .04) {
+      return 7;
+    } else if (_lat < .05 && _lng < .05) {
+      return 6;
+    } else if (_lat < .06 && _lng < .06) {
       return 5;
-    } else if (_lat < 20 && _lng < 20) {
+    } else if (_lat < .07 && _lng < .07) {
+      return 4;
+    } else if (_lat < .08 && _lng < .08) {
+      return 3;
+    } else if (_lat < .09 && _lng < .09) {
+      return 2;
+    } else if (_lat < .1 && _lng < .1) {
       return 1;
     } else return 0;
   }
