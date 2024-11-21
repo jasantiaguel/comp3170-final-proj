@@ -3,27 +3,24 @@ import "../css/Quiz.css"
 import { useNavigate } from "react-router-dom";
 import ExpandingMap from "./ExpandingMap";
 
-// import goodEats1 from "/public/good-eats/1.png";
-// import goodEats2 from "/public/good-eats/2.png";
-// import goodEats3 from "/public/good-eats/3.png";
+const locations = {
+    beaches: [
+        {
+            id: 1,
+            targetCoords: {lat: 49.250458089117636, lng: -123.00526868536116},
+            image: "/beaches/1.png"
+        }
+    ]
+}
 
-// import parks1 from "/public/parks/1.png";
-// import parks2 from "/public/parks/2.png";
-// import parks3 from "/public/parks/3.png";
+export default function Quiz({category}) {
+    const [number, setNumber] = useState(0);
+    const location = locations[category];
 
-// import beaches1 from "/public/beaches/1.png";
-// import beaches2 from "/public/beaches/2.png";
-// import beaches3 from "/public/beaches/3.png";
-
-// const goodEats = [goodEats1, goodEats2, goodEats3];
-// const parks = [parks1, parks2, parks3];
-// const beaches = [beaches1, beaches2, beaches3];
-
-export default function Quiz(props) {
-    const [number, setNumber] = useState(1);
     const navigate = useNavigate();
     function handleClick() {
-        if (number < 3) {
+        setScore(score + getScore());
+        if (number < location.length-1) {
             setNumber(number + 1);
         }
         else {
@@ -32,7 +29,7 @@ export default function Quiz(props) {
     }
 
     const [coords, setCoords] = useState({});
-    const targetCoords = {lat: 49.250458089117636, lng: -123.00526868536116};
+    const [targetCoords, setTargetCoords] = useState(location[number].targetCoords);
     const diff = getDiff(targetCoords, coords);
     const [score, setScore] = useState(0);
 
@@ -61,7 +58,7 @@ export default function Quiz(props) {
     return(
         <> 
             <ExpandingMap setCoords={setCoords}/>
-            <img className="mainImage" src={`/${props.category}/${number}.png`}/>
+            <img className="mainImage" src={location[number].image}/>
             <div style={{backgroundColor: "white", color: "black", position: "fixed", bottom: "3rem", left: "3rem"}}>
                 <h3>debug window</h3>
                 <p>Target: {targetCoords.lat} {targetCoords.lng}</p>
@@ -71,7 +68,7 @@ export default function Quiz(props) {
                 <button onClick={() => setScore(0)}>Reset score</button>
             </div>
             <div style={{position: "fixed", bottom: "3rem", right: "3rem", display: "flex", gap: "1rem"}}>
-                <button onClick={() => setScore(score + getScore())} className="nextButton">Confirm</button>
+                {/* <button onClick={() => setScore(score + getScore())} className="nextButton">Confirm</button> */}
                 <button onClick={handleClick} className="nextButton">Next</button>
             </div>
 
