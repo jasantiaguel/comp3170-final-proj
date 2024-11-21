@@ -14,7 +14,7 @@ const ExpandingMap = ({center=[49.250458089117636, -123.00526868536116], setCoor
 
   return(
     <div className="map">
-      <MapContainer center={center} zoom={4} scrollWheelZoom={true} style={{width: "100%", height: "100%"}}>
+      <MapContainer center={center} zoom={10} scrollWheelZoom={true} style={{width: "100%", height: "100%"}}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
