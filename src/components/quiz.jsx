@@ -10,12 +10,12 @@ export default function Quiz({category}) {
 
     const navigate = useNavigate();
     function handleClick() {
-        setScore(score + getScore());
         if (number < locations[category].length-1) {
+            setScore(score + getScore());
             setNumber(number + 1);
         }
         else {
-            navigate("/results");
+            navigate("/results", {state: {result: score + getScore()}});
         }
     }
 
