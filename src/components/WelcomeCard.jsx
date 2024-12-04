@@ -9,6 +9,8 @@ export default function WelcomeCard() {
   const [isClicked, setIsClicked] = useState(false);
   const navigate = useNavigate();
 
+  const results = JSON.parse(sessionStorage.getItem("results"));
+
   return (
     <motion.div
       className="welcome-card"
@@ -54,6 +56,19 @@ export default function WelcomeCard() {
           <li>Get points for how close your guess is to the real location</li>
           <li>Save your favorite locations</li>
         </ol>
+        <div style={{width: "100%"}}>
+          <h3 style={{margin: "0"}}>Latest score(s):</h3>
+          <div style={{paddingLeft: "1rem", marginBottom: "1rem"}}>
+            {results && results.reverse().map((result) => {
+              return(
+                <div style={{width: "100%", display: "flex", flexDirection: "row", justifyContent: "space-between", margin: 0}}>
+                  <p style={{margin: 0}}>{result.category}</p>
+                  <p style={{margin: 0}}>{result.score}</p>
+                </div>
+              )
+            })}
+          </div>
+        </div>
         <button
           className="play-button"
           onClick={() => setIsClicked(true)} // Trigger animation on click

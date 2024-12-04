@@ -11,11 +11,17 @@ export default function Quiz({category}) {
     const navigate = useNavigate();
     function handleClick() {
         if (number < locations[category].length-1) {
-            setScore(score + getScore());
-            setNumber(number + 1);
+          setScore(score + getScore());
+          setNumber(number + 1);
         }
         else {
-            navigate("/results", {state: {result: score + getScore()}});
+          const _result = {category: category, score: score + getScore()};
+          let _newResults = [];
+          if (sessionStorage.getItem("results")) {
+            _newResults = [...JSON.parse(sessionStorage.getItem("results")), _result];
+          } else _newResults = [_result];
+          sessionStorage.setItem("results", JSON.stringify(_newResults));
+          navigate("/results", {state: {result: _result}});
         }
     }
 

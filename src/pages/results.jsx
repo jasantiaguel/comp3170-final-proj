@@ -4,14 +4,13 @@ import styles from "./results.module.css";
 
 export default function Results() {
     const result = useLocation().state.result;
-    console.log(result);
 
     return (
         <div className={styles.background}>
             <div className={styles.overlay}>
                 <div className={styles.container}>
                     <div className={styles.content}>
-                        <h1 className={styles.heading}>Results</h1>
+                        <h1 className={styles.heading}>Congrats on completeing the {result.category} quiz!</h1>
                         <motion.p
                             className={styles.score}
                             initial={{ scale: 0.5 }} 
@@ -21,7 +20,7 @@ export default function Results() {
                                 ease: "easeInOut", 
                             }}
                         >
-                            Your Score: {result}
+                            Your Score: {result.score}
                         </motion.p>
                         <Link className={styles.link} to="/">Back To Home</Link>
                     </div>
