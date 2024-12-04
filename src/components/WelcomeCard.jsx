@@ -52,8 +52,8 @@ export default function WelcomeCard() {
         <h2>Heres how it works:</h2>
         <ol>
           <li>Choose a category to start the game</li>
-          <li>Guess the location based on the images shown</li>
-          <li>Get points for how close your guess is to the real location</li>
+          <li>Add a pin on the minimap where you think each photo is located</li>
+          <li>Get points for how close your guesses were to the real location</li>
           <li>Save your favorite locations</li>
         </ol>
         <div style={{width: "100%"}}>
