@@ -70,7 +70,7 @@ export default function Quiz({category}) {
         src={currentLocation.image}
         alt={currentLocation.name}
       />
-      <div
+      {/* <div
         style={{
           backgroundColor: "white",
           color: "black",
@@ -94,7 +94,7 @@ export default function Quiz({category}) {
         </p>
         <p>Score: {score}</p>
         <button onClick={() => setScore(0)}>Reset score</button>
-      </div>
+      </div> */}
       <div
         style={{
           position: "fixed",
