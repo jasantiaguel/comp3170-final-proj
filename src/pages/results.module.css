@@ -1,5 +1,5 @@
 .background {
-    background-image: url('public/Vancouver-skyline.jpg');
+    background-image: url('/Vancouver-skyline.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
