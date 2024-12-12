@@ -64,7 +64,7 @@ export default function Quiz({category}) {
 
   return (
     <>
-      <ExpandingMap setCoords={setCoords} />
+      <ExpandingMap setCoords={setCoords}/>
       <img
         className="mainImage"
         src={currentLocation.image}
